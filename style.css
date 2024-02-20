@@ -1,3 +1,7 @@
 .bg-MyColor {
     background-color: rgb(18, 113, 81);
 }
+.error {
+    color: red;
+    font-size: 16px;
+}
