@@ -5,3 +5,57 @@
     color: red;
     font-size: 16px;
 }
+
+.align-items {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  #cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+  
+  #totalPrice {
+    float: right;
+    font-weight: 700;
+  }
+  
+  form {
+    width: 80%;
+    margin: 30px;
+  }
+  .error {
+    color: red;
+    font-size: 10px;
+  }
+  
+  .img-drinks {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .dis-flex_justcont-cent {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .width-100 {
+    width: 100%;
+  }
+  
+  #server-error {
+    display: none;
+    color: red;
+  }
+  
+  .width-auto {
+    width: auto;
+  }
+
+  .card{
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
