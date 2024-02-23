@@ -12,26 +12,27 @@ fetch("https://65d38018522627d50109056a.mockapi.io/api/drinks")
     });
   });
 
-function createCard(element) {
+function createCard(drink) {
   return `
     <div class="card"  style="width: 18rem;">
     <div style="display:flex; justify-content:center">
-    <img src="${element.img}" class="card-img-top img-drinks" alt="${
-    element.name
+    <img src="${drink.img}" class="card-img-top img-drinks" alt="${
+    drink.name
   }">
     </div>
   
     <div class="card-body" style="display:flex; flex-direction:column; justify-content:space-between">
-      <h5 class="card-title"style="text-align:center">${element.name}</h5>
-      <p class="card-text">${element.description}</p>
+      <h5 class="card-title"style="text-align:center">${drink.name}</h5>
+      <p class="card-text">${drink.description}</p>
   <div style="display:flex; justify-content: space-between">
-  <span>Price: ${element.price} den</span>
-  <span>${element.stock > 0 ? "Stock: " + element.stock : "No Stock"}</span>
+  <span>Price: ${drink.price} den</span>
+  <span>${drink.stock > 0 ? "Stock: " + drink.stock : "No Stock"}</span>
   </div>
-      <button  id="${element.id}" onclick="addToCart(${
-    element.id
+      <button  id="${drink.id}" onclick="addToCart(${
+        drink.id
   })" class="btn btn-primary">Add to Cart</button>
     </div>
   </div>
     `;
 }
+
